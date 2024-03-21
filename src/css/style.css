@@ -1,0 +1,8 @@
+@tailwind base;
+
+/* personalizacion */
+
+@tailwind components;
+@tailwind utilities;
+
+/*  tailwind non é suficiente */
