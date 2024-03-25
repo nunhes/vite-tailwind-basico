@@ -1,8 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+@layer base {
+    html {
+        font-family: Montserrat, system-ui sans-serif;
+    }
+}
+
 @tailwind base;
 
 /* personalizacion */
+
 
 @tailwind components;
 @tailwind utilities;
 
 /*  tailwind non é suficiente */
+
+
+.words-wrapper {
+    font-size: 40px;
+    font-weight: bold;
+    /* text-align: center; */
+}
+
+.words-wrapper .css {
+    color: #2ec4b6;
+}
+
+.words-wrapper .words {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    width: var(--width);
+    height: 60px;
+    padding: 0 10px;
+    border-radius: 6px;
+    color: var(--color, #000);
+    background: var(--color-bg, #ffc703);
+    box-sizing: content-box;
+    transition: all 0.7s;
+}
+
+.words-wrapper .words span {
+    position: absolute;
+    white-space: nowrap;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -100%);
+    transition: transform 0.7s, opacity 0.25s 0.25s;
+}
+
+.words-wrapper .words span.current {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.words-wrapper .words span.next {
+    transform: translate(-50%, 100%);
+}
+
+
+
+
+/* Variable Fonts
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("/fonts/variable/Nunito-VariableFont_wght.woff2") format("woff2");
+        font-named-instance: "Regular";
+    }
+
+    @font-face {
+        font-family: "Nunito";
+        font-style: italic;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("/fonts/variable/Nunito-Italic-VariableFont_wght.woff2") format("woff2");
+        font-named-instance: "Italic";
+    }
+}    */

@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@fontsource-variable/open-sans':
+    specifier: ^5.0.28
+    version: 5.0.28
+
 devDependencies:
   autoprefixer:
     specifier: ^10.4.19
@@ -231,6 +236,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource-variable/open-sans@5.0.28:
+    resolution: {integrity: sha512-PYfH6e+Jm8N5DRRAEOGneQx3ObnyNgAJ9WTbw7w84tSEmvk+ypo1kUslF2WGkgaygU2uN7wwAAPVnO7YYpipzg==}
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
