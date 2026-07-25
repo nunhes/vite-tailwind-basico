@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@fontsource-variable/open-sans':
     specifier: ^5.0.28
-    version: 5.0.28
+    version: 5.3.0
 
 devDependencies:
   autoprefixer:
@@ -237,8 +237,8 @@ packages:
     dev: true
     optional: true
 
-  /@fontsource-variable/open-sans@5.0.28:
-    resolution: {integrity: sha512-PYfH6e+Jm8N5DRRAEOGneQx3ObnyNgAJ9WTbw7w84tSEmvk+ypo1kUslF2WGkgaygU2uN7wwAAPVnO7YYpipzg==}
+  /@fontsource-variable/open-sans@5.3.0:
+    resolution: {integrity: sha512-VOfhZfLIOBVa6K/dTEu7scqQXYdGa4jBX8quFpQ0S6574B+W2EOBJf9PkqyVtMEI7WWIWNEbpvPc3vY1mN2mmQ==}
     dev: false
 
   /@isaacs/cliui@8.0.2:
